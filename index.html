@@ -1,12 +1,181 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="css/reseter.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    
 </head>
 <body>
+    <header>
+        <h1>DrivenEats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+    </header>
+   
+            <main >
+
+                <h3>Primeiro, seu prato</h3>
+                <div class="produto">
+                    <div id="hamburguer" class="lanche"  onclick="escolherLanche(id,'Hamburguer sem Batata',10.90);">
+                        <img src="imagem/Hamburguer.jpg">
+                        <h4>Hamburguer</h4>
+                        <p>Sem batata</p>
+                        
+                        <h5>R$ 10,90</h5>
+                        <ion-icon class="icone" name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <div id="xburguer" class="lanche"  onclick="escolherLanche(id, 'X burguer com Batata',14.90);">
+                        <img src="imagem/Hamburguer.jpg">
+                        <h4>X burguer</h4>
+                        <p>Com batata</p>
+                        <h5>R$ 14,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <div id="eggburguer" class="lanche"  onclick="escolherLanche(id,'Egg burguer duas batatas',19.90);">
+                        <img src="imagem/Hamburguer.jpg">
+                        <h4>Egg burguer</h4>
+                        <p>Duas batata</p>
+                        <h5>R$ 19,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <div id="xtudo" class="lanche"  onclick="escolherLanche(id,'X Tudo batata com cheeda',25.90);">
+                        <img src="imagem/Hamburguer.jpg">
+                        <h4>X tudo</h4>
+                        <p>Batata com cheeda</p>
+                        <h5>R$ 25,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <div id="vburguer" class="lanche"  onclick="escolherLanche(id,'Vegano burguer',33.90);">
+                        <img src="imagem/Hamburguer.jpg">
+                        <h4> Vegano burguer</h4>
+                        <p>Batata</p>
+                        <h5>R$ 33,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <h3>Agora, sua bebida</h3>
+                <div class="produto">
+                    <div id="refrilata" class="lanche"  onclick="escolherRefri(id,'Refri Lata',4.90);">
+                        <img src="imagem/refrigerante.jpg">
+                        <h4>Refri Lata</h4>
+                        <p>350 ml</p>
+                        <h5>R$ 4,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <div id="refri1litro" class="lanche"  onclick="escolherRefri(id, 'Refrigerante 1 L',8.90);">
+                        <img src="imagem/refrigerante2L.jpeg">
+                        <h4>Refrigerante</h4>
+                        <p>1000ml</p>
+                        <h5>R$ 8,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <div id="umlitromeio" class="lanche"  onclick="escolherRefri(id,'Refrigerante 1.5 L',12.90);">
+                        <img src="imagem/refrigerante2L.jpeg">
+                        <h4>Refrigerante</h4>
+                        <p>1500ml</p>
+                        <h5>R$ 12,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <div id="doislitros" class="lanche"  onclick="escolherRefri(id,'Refrigerante 2 L',15.90);">
+                        <img src="imagem/refrigerante2L.jpeg">
+                        <h4>Refrigerante</h4>
+                        <p>2000ml</p>
+                        <h5>R$ 15,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <div id="treslitros" class="lanche"  onclick="escolherRefri(id,'Refrigerante 3 L',20.90);">
+                        <img src="imagem/refrigerante2L.jpeg">
+                        <h4> Refrigerante</h4>
+                        <p>3000ml</p>
+                        <h5>R$ 20,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <h3>Por fim, sua sobremesa</h3>
+                <div class="produto">
+                    <div id="leite" class="lanche"  onclick="escolherSobremesa(id,'bolo de leite',7.90);">
+                        <img src="imagem/taca-doce.png">
+                        <h4>Doce de leite</h4>
+                        <p>bolo de pote</p>
+                        <h5>R$ 7,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <div id="chocolate" class="lanche"  onclick="escolherSobremesa(id, 'bolo de chocolate',8.90);">
+                        <img src="imagem/brigadeiro.jpg">
+                        <h4>Chocolate</h4>
+                        <p>bolo de pote</p>
+                        <h5>R$ 8,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <div id="coco" class="lanche"  onclick="escolherSobremesa(id,'bolo de  coco',9.90);">
+                        <img src="imagem/taca-doce.png">
+                        <h4>Coco</h4>
+                        <p>bolo de pote</p>
+                        <h5>R$ 9,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <div id="morango" class="lanche"  onclick="escolherSobremesa(id,'bolo de morango',10.90);">
+                        <img src="imagem/brigadeiro.jpg">
+                        <h4>Morango</h4>
+                        <p>bolo de pote</p>
+                        <h5>R$ 10,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <div id="maracuja" class="lanche"  onclick="escolherSobremesa(id,'bolo de maracuja',21.90);">
+                        <img src="imagem/taca-doce.png">
+                        <h4> Maracuja</h4>
+                        <p>bolo de pote</p>
+                        <h5>R$ 20,90</h5>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                </div>
+
+            </main>
     
+        <footer>
+            <button id="botao" onclick="finalizarPedido();">
+                <span id="texto">Selecione os 3 itens para fechar o pedido</span>
+            </button>
+        </footer>
+    
+    <div id="fundos" class="fundo">
+        <div id="bonus" class="caixaConfirmacao">
+            <div class="titulo"><strong></strong>
+            </div>
+            <div class="requisicao">
+                <div class="lista-pedido">
+                    <span class="comida"></span>
+                    <span class="vcomida"></span>
+                </div>
+                <div class="lista-pedido">
+                    <span class="bebida"></span>
+                    <span class="vbebida"></span>
+                </div>
+                <div class="lista-pedido">
+                    <span class="sobremesa"></span>
+                    <span class="vsobremesa"></span>
+                </div>
+                <div class="lista-pedido">
+                    <span><strong>Total</strong></span>
+                    <span class="total"></span>
+                </div>
+               
+            </div>
+           
+            <button id="btpedir" class="confirmacao" onclick="confirmarPedido()" >Tudo certo, pode pedir!</button>
+            <button id="btncancelar" class="cancelamento" onclick="cancelarPedido();">Cancelar</button>
+         </div> 
+    </div>
+
+    
+
+<script src="javascript/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
