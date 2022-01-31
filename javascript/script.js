@@ -40,7 +40,7 @@ function escolherLanche(id, nome, valor) {
         "0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F";
       idComida = id;
       comida = nome;
-      valorComida = parseFloat(valor);
+      valorComida = valor;
     }
   }
 
@@ -70,7 +70,7 @@ function escolherRefri(id, nome, valor) {
         "0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F";
       idBebida = id;
       bebida = nome;
-      valorBebida = parseFloat(valor);
+      valorBebida = valor;
     }
   }
 
@@ -94,7 +94,7 @@ function escolherSobremesa(id, nome, valor) {
         "0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F";
       idSobremesa = id;
       sobremesa = nome;
-      valorSobremesa = parseFloat(valor);
+      valorSobremesa = valor;
     }
   }
   verificarBotao();
@@ -116,6 +116,7 @@ function finalizarPedido() {
     document.getElementById("bonus").style.zIndex = "3";
     document.getElementById("texto").innerHTML = "Finalizar Pedido";
 
+    document.querySelector(".titulo").innerHTML = "Confirma seu Pedido";
     document.querySelector(".comida").innerHTML = comida;
     document.querySelector(".vcomida").innerHTML = valorComida.toFixed(2);
     document.querySelector(".bebida").innerHTML = bebida;

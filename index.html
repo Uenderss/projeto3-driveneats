@@ -20,7 +20,7 @@
             <section >
 
                 <h3>Primeiro, seu prato</h3>
-                <div class="produto">
+                <div class="produto" data-identifier="dishes">
                     <div id="hamburguer" class="lanche"  onclick="escolherLanche(id,'Hamburguer sem Batata',10.90);">
                         <div>
                         <img src="imagem/Hamburguer.jpg">
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <h3>Agora, sua bebida</h3>
-                <div class="produto">
+                <div class="produto" data-identifier="drinks">
                     <div id="refrilata" class="lanche"  onclick="escolherRefri(id,'Refri Lata',4.90);">
                         <div>
                         <img src="imagem/refrigerante2L.jpeg">
@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <h3>Por fim, sua sobremesa</h3>
-                <div class="produto">
+                <div class="produto" data-identifier="desserts">
                     <div id="leite" class="lanche"  onclick="escolherSobremesa(id,'bolo de leite',7.90);">
                         <div>
                         <img src="imagem/brigadeiro.jpg">
@@ -192,8 +192,8 @@
                     <span class="vsobremesa"></span>
                 </div>
                 <div class="lista-pedido">
-                    <span><strong>Total</strong></span>
-                    <span class="total"></span>
+                    <span class="subtitulo"><strong>Total</strong></span>
+                    <span class="subtitulo total"></span>
                 </div>
                
             </div>
